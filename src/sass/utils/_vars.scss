@@ -1,0 +1,29 @@
+$heading-text-color: #212121; //* Текст заголовка */
+$main-text-color: #757575; //* Текст */
+$main-white-color: #ffffff; //* просто білий колір */
+$black-color: #000000; //* просто чорний колір */
+$fotter-background-color: #303030; //*колір футера*/
+$button-main-color: #e0e0e0; //* кнопка  */
+$button-border-color: #0059ff; //* кнопка  */
+$card-border: #eee; //* Рамка картки*/
+$main-background-color: #505050;
+
+$time-hover: 250ms; //* Час эфектів ховера */
+$timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+:root {
+  --cards-gap: 19px; //* Відступ у картках  */
+  --cards-count: 3; //* Карток в лінії  */
+}
+
+@media screen and (min-width: 1200px) {
+  :root {
+    --cards-count: 4;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  :root {
+    --cards-count: 5;
+  }
+}

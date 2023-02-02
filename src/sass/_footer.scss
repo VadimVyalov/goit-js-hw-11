@@ -1,0 +1,28 @@
+.footer {
+  height: 75px;
+  background-color: $fotter-background-color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer {
+  width: 500px;
+  height: 100%;
+
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  justify-content: space-between;
+  color: $button-main-color;
+  padding-top: 5px;
+  font-size: 20px;
+}
+
+.answer p {
+  margin: 0;
+  display: inline;
+}
+
+.answer.hide {
+  display: none;
+}

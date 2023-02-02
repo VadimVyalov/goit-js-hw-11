@@ -1,0 +1,75 @@
+.swiper {
+  justify-content: center;
+  overflow-y: hidden;
+  display: flex;
+  height: 100%; //calc(100% - 100px);
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+
+  justify-content: space-between;
+  margin: 0 !important;
+}
+
+.swiper-wrapper {
+  @include grid(var(--cards-gap), var(--cards-count));
+  flex-grow: 1;
+  transform: translate3d(0px, 0px, 0px);
+}
+
+.swiper-pagination {
+  width: 50px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 10px;
+}
+
+.swiper-pagination-bullet {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  opacity: 1;
+  border: 2px solid $button-border-color;
+  transition: $time-hover $timing-function;
+
+  &:hover,
+  &:focus {
+    opacity: 1;
+    //  ====== green
+    background-color: $fotter-background-color;
+    box-shadow: 0px 4px 4px rgba(75, 119, 241, 0.2);
+    border-color: $button-border-color;
+    transition-property: background-color, box-shadow;
+  }
+}
+
+.swiper-pagination-bullet-active {
+  height: 40px;
+  //  ====== green
+  background-color: $fotter-background-color;
+}
+.swiper-pagination-bullet-hide {
+  display: none;
+}
+
+.swiper-bullet-hidden .swiper-pagination-bullet {
+  display: none;
+}
+
+.swiper-pagination-disabled .swiper-pagination- {
+  display: none;
+}
+
+.slide-hide {
+  display: none;
+}
+.swiper-zoom-container {
+  height: 100%;
+}

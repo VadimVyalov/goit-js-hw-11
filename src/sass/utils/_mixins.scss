@@ -1,0 +1,5 @@
+@mixin grid($gap, $count) {
+  display: grid;
+  gap: $gap;
+  grid-template-columns: repeat(($count, calc((100% - ($count - 1) * $gap) / $count)));
+}
